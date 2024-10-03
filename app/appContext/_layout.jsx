@@ -1,12 +1,13 @@
-// import React from "react";
-// import {Slot} from "expo-router";
-// import { AppProvider } from "./appContext";
-// import { AppProvider } from "react-native";
+import React from "react";
+import { Slot } from "expo-router";
+import { CarrinhoProvider } from "../../scripts/appContext"; 
 
-// export default Layout = () => {
-//     return(
-//         <AppProvider>
-//             <Slot/>
-//         </AppProvider>
-//     )
-// }
+const Layout = () => {
+    return (
+        <CarrinhoProvider>
+            <Slot />
+        </CarrinhoProvider>
+    );
+};
+
+export default Layout;
